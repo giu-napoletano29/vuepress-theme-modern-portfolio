@@ -20,6 +20,7 @@
       <div class="p-3">
         <p>{{ $themeConfig.about.bio }}</p>
       </div>
+      <BlogTags :tags="tags" />
       <hr class="mt-0">
       <ul
         v-if="contact"
@@ -75,6 +76,10 @@ export default {
         .filter(({ iconComponent }) => iconComponent)
     },
 
+    tags () {
+      return this.$tag.list
+    },
+
     copyright () {
       return (
         (this.$themeConfig.footer && this.$themeConfig.footer.copyright) || []
@@ -107,7 +112,7 @@ export default {
 
 <style lang="stylus" scoped>
 .about-card {
-  max-width 35rem;
+  max-width 80rem;
   .card-header {
     min-height: 220px;
     background-color: darken($accentColor, 10%);

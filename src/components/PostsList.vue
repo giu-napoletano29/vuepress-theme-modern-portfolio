@@ -1,6 +1,7 @@
 <template>
-  <main class="">
-    <div class="posts-list">
+  <div
+    class="mx-auto col-md-12 col-lg-8 zoomIn mb-3 about-card"
+  >
       <post-card
         v-for="post in posts"
         :key="post.key"
@@ -8,8 +9,7 @@
         class="mb-4 cursor-pointer"
         shadow="hover"
       />
-    </div>
-  </main>
+  </div>
 </template>
 
 <script>
@@ -27,9 +27,3 @@ export default {
   },
 }
 </script>
-
-<style lang="stylus">
-.cursor-pointer {
-  cursor: pointer;
-}
-</style>

@@ -49,23 +49,17 @@ module.exports = {
         link: '/',
         icon: 'el-icon-house',
       },
-      {
-        text: 'Projects',
-        link: '/projects/',
-        icon: 'el-icon-folder',
-      },
+      // {
+      //   text: 'Projects',
+      //   link: '/projects/',
+      //   icon: 'el-icon-folder',
+      // },
     ],
-    // Let's say that we want to add a small message at the beginning or at the
-    // end of each post. This is the place!
-    posts: {
-      prepend: "Hi, I hope you'll <i>enjoy</i> this post!",
-      append: "Hi, I hope you've <b>enjoyed</b> this post!",
-    },
-    disqus: 'disquswebsiteshortname', // if you want to incorporate Disqus for comments replace this value else just get rid of it
+
     about: {
-      fullName: 'Ahmad Mostafa',
+      fullName: 'Giuseppe Napoletano',
       bio: 'I am a passionate Software Engineer, I love Vue.js ♥ ...',
-      image: 'https://www.ahmadmostafa.com/images/bg_1.png',
+      image: 'https://source.unsplash.com/random/800x600',
     },
     footer: {
       contact: [
@@ -115,10 +109,10 @@ module.exports = {
       },
     ],
     [
-      'sitemap',
-      {
-        hostname: 'https://vp-modern.z3by.com',
-      },
+      // 'sitemap',
+      // {
+      //   hostname: 'https://vp-modern.z3by.com',
+      // },
     ],
   ],
 }

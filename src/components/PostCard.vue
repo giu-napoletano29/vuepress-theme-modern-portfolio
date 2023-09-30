@@ -4,13 +4,12 @@
     mode="in-out"
   >
     <el-card
-      class="mb-4 cursor-pointer post-card"
+      class="mb-3 cursor-pointer post-card"
       shadow="hover"
       :body-style="{ padding: '0rem' }"
     >
       <div
         class="ui-post row px-3"
-        @click="go(post.path)"
       >
         <div
           v-if="post.frontmatter.postcard_image || post.frontmatter.image"
@@ -25,12 +24,14 @@
         <div class="col-sm-12 col-md-6 col-lg-7 py-4">
           <div>
             <h3 class="h3">
-              <router-link
+                {{ post.title }}
+
+              <!-- <router-link
                 :to="post.path"
                 class="text-decoration-none"
               >
                 {{ post.title }}
-              </router-link>
+              </router-link> -->
             </h3>
           </div>
           <div

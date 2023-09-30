@@ -3,13 +3,13 @@
     id="base-list-layout"
     class="zoomIn"
   >
-    <header
+    <!-- <header
       class="home-hero"
       :style="{
         backgroundImage: 'url(' + $withBase($themeConfig.heroImage) + ')'
       }"
-    >
-      <div class="p-3 text-center text-light">
+    > -->
+      <!-- <div class="p-3 text-center text-light">
         <h1 class="display-3">
           {{ $site.title }}
         </h1>
@@ -23,26 +23,25 @@
           $t("latest_posts")
         }}</a>
       </div>
-    </header>
+    </header> -->
     <featured-posts class="my-5 d-sm-none d-lg-block" />
     <el-container class="row px-lg-4">
-      <aside class="tags col-md-12 col-lg-3  py-0 py-lg-5">
-        <About v-if="$themeConfig.about" />
-        <BlogTags :tags="tags" />
-      </aside>
-      <div
-        id="posts"
-        class="col-md-12 col-lg-9 py-3 py-lg-5"
-      >
+      <aside class="tags col-md-12 col-lg-12  py-0 py-lg-5">
+        <About v-if="$themeConfig.about" /> 
         <PostsList :posts="pages" />
+        <div
+          id="posts"
+          class="col-md-12 col-lg-8 py-3 py-lg-5"
+        >
 
-        <div class="d-flex">
-          <component
-            :is="paginationComponent"
-            v-if="$pagination.length > 1 && paginationComponent"
-          />
+          <div class="d-flex">
+            <component
+              :is="paginationComponent"
+              v-if="$pagination.length > 1 && paginationComponent"
+            />
+          </div>
         </div>
-      </div>
+      </aside>
     </el-container>
   </div>
 </template>
@@ -65,9 +64,9 @@ export default {
     pages () {
       return this.$pagination.pages
     },
-    tags () {
-      return this.$tag.list
-    },
+    // tags () {
+    //   return this.$tag.list
+    // },
   },
   created () {
     this.paginationComponent = this.getPaginationComponent()
@@ -90,13 +89,13 @@ export default {
 <style src="prismjs/themes/prism-okaidia.css"></style>
 
 <style lang="stylus">
-header.home-hero {
-  background-color: #999;
-  background-blend-mode: multiply;
-  padding: 10rem 0rem;
-  background-repeat: none;
-  background-size: cover;
-}
+// header.home-hero {
+//   background-color: #999;
+//   background-blend-mode: multiply;
+//   padding: 10rem 0rem;
+//   background-repeat: none;
+//   background-size: cover;
+// }
 
 .tags, #posts {
   @media only screen and (max-width: $MQMobile) {
