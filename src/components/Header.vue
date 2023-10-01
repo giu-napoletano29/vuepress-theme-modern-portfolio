@@ -1,5 +1,6 @@
 <template>
   <header
+    v-if="$themeConfig.showHeaderNav"
     id="header"
     class="shadow"
   >

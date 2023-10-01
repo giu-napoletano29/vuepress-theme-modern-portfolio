@@ -19,23 +19,47 @@
 </template>
 
 <script>
-import {
-  GithubIcon,
-  FacebookIcon,
-  TwitterIcon,
-  YoutubeIcon,
-  InstagramIcon,
-  LinkedinIcon,
-} from 'vue-feather-icons'
+import Vuejs from 'vue-material-design-icons/Vuejs.vue'
+import LanguageC from 'vue-material-design-icons/LanguageC.vue'
+import LanguageCpp from 'vue-material-design-icons/LanguageCpp.vue'
+import LanguageCsharp from 'vue-material-design-icons/LanguageCsharp.vue'
+import LanguageCss3 from 'vue-material-design-icons/LanguageCss3.vue'
+import LanguageHtml5 from 'vue-material-design-icons/LanguageHtml5.vue'
+import LanguageJava from 'vue-material-design-icons/LanguageJava.vue'
+import LanguageJavascript from 'vue-material-design-icons/LanguageJavascript.vue'
+import LanguageKotlin from 'vue-material-design-icons/LanguageKotlin.vue'
+import LanguageMarkdown from 'vue-material-design-icons/LanguageMarkdown.vue'
+import LanguageMarkdownOutline from 'vue-material-design-icons/LanguageMarkdownOutline.vue'
+import LanguagePhp from 'vue-material-design-icons/LanguagePhp.vue'
+import LanguagePython from 'vue-material-design-icons/LanguagePython.vue'
+import LanguageR from 'vue-material-design-icons/LanguageR.vue'
+import LanguageRuby from 'vue-material-design-icons/LanguageRuby.vue'
+import LanguageRubyOnRails from 'vue-material-design-icons/LanguageRubyOnRails.vue'
+import LanguageSwift from 'vue-material-design-icons/LanguageSwift.vue'
+import LanguageTypescript from 'vue-material-design-icons/LanguageTypescript.vue'
+import LanguageXaml from 'vue-material-design-icons/LanguageXaml.vue'
 
 export default {
   components: {
-    GithubIcon,
-    FacebookIcon,
-    TwitterIcon,
-    YoutubeIcon,
-    InstagramIcon,
-    LinkedinIcon,
+    Vuejs,
+    LanguageC,
+    LanguageCpp,
+    LanguageCsharp,
+    LanguageCss3,
+    LanguageHtml5,
+    LanguageJava,
+    LanguageJavascript,
+    LanguageKotlin,
+    LanguageMarkdown,
+    LanguageMarkdownOutline,
+    LanguagePhp,
+    LanguagePython,
+    LanguageR,
+    LanguageRuby,
+    LanguageRubyOnRails,
+    LanguageSwift,
+    LanguageTypescript,
+    LanguageXaml,
   },
 
   props: {
@@ -61,18 +85,44 @@ export default {
   methods: {
     getIconComponentName (contactType) {
       switch (contactType) {
-        case 'github':
-          return 'GithubIcon'
-        case 'facebook':
-          return 'FacebookIcon'
-        case 'twitter':
-          return 'TwitterIcon'
-        case 'instagram':
-          return 'InstagramIcon'
-        case 'linkedin':
-          return 'LinkedinIcon'
-        case 'youtube':
-          return 'YoutubeIcon'
+        case 'Vue':
+          return 'Vuejs'
+        case 'C':
+          return 'LanguageC'
+        case 'Cpp':
+          return 'LanguageCpp'
+        case 'Csharp':
+          return 'LanguageCsharp'
+        case 'Css':
+          return 'LanguageCss3'
+        case 'Html':
+          return 'LanguageHtml5'
+        case 'Java':
+          return 'LanguageJava'  
+        case 'Javascript':
+          return 'LanguageJavascript'
+        case 'Kotlin':
+          return 'LanguageKotlin'
+        case 'Markdown':
+          return 'LanguageMarkdown'
+        case 'MarkdownOutline':
+          return 'LanguageMarkdownOutline'
+        case 'Php':
+          return 'LanguagePhp'
+        case 'Python':
+          return 'LanguagePython'
+        case 'R':
+          return 'LanguageR'
+        case 'Ruby':
+          return 'LanguageRuby'
+        case 'RubyOnRails':
+          return 'LanguageRubyOnRails'
+        case 'Typescript':
+          return 'LanguageTypescript'
+        case 'Xaml':
+          return 'LanguageXaml'
+        case 'Swift':
+          return 'LanguageSwift'
         default:
           return ''
       }

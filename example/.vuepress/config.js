@@ -15,6 +15,8 @@ module.exports = {
     //   message: 'We use cookies!',
     // },
 
+    showHeaderNav: false,
+    postsheader: 'Experiences',
     summary: true,
 
     // Example of advanced summary usage
@@ -58,18 +60,18 @@ module.exports = {
 
     skills: [
       {
-        title: 'vue',
-        icon: 'github',
+        title: 'Vue',
+        icon: 'Vue',
         link: ''
       },
       {
-        title: 'javascript',
-        icon: 'github',
+        title: 'Javascript',
+        icon: 'Javascript',
         link: ''
       },
       {
-        title: 'python',
-        icon: 'github',
+        title: 'Python',
+        icon: 'Python',
         link: ''
       },
     ],
@@ -117,7 +119,6 @@ module.exports = {
     'reading-progress',
     '@vuepress/medium-zoom',
     '@vuepress/nprogress',
-    'social-share',
     '@vuepress/google-analytics',
     [
       '@vuepress/pwa',
