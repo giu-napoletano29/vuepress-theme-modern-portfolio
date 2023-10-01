@@ -58,6 +58,13 @@ module.exports = {
     //   },
     // ],
 
+    background: {
+      imageUrl: '',
+      primaryColor: '#1decc599',
+      secondaryColor: '#5b0ed699 100%',
+      fallbackColor: '#a18cd1',
+    },
+
     languages: [
       'it',
       'gb',
