@@ -1,13 +1,13 @@
 module.exports = {
-  title: 'VuePress Blog Example',
-  description: 'This is a blog example built by VuePress',
+  title: 'VuePress Portfolio Example',
+  description: 'This is a portfolio example built by VuePress',
   theme: require.resolve('../../'), // replace it with ==> theme: 'modern-blog' to use this example project as a boilerplate.
   summaryLength: 700,
   themeConfig: {
-    translations: {
-      read_more: 'Keep reading!',
-      read_this_post: 'Read this post now!',
-    },
+    // translations: {
+    //   read_more: 'Keep reading!',
+    //   read_this_post: 'Read this post now!',
+    // },
 
     // cookies: {
     //   theme: 'dark-lime',
@@ -43,17 +43,35 @@ module.exports = {
       append: "📖",
     },
     */
-    nav: [
+    // nav: [
+    //   {
+    //     text: 'Home',
+    //     link: '/',
+    //     icon: 'el-icon-house',
+    //   },
+    //   {
+    //     text: 'Projects',
+    //     link: '/projects/',
+    //     icon: 'el-icon-folder',
+    //   },
+    // ],
+
+    skills: [
       {
-        text: 'Home',
-        link: '/',
-        icon: 'el-icon-house',
+        title: 'vue',
+        icon: 'github',
+        link: ''
       },
-      // {
-      //   text: 'Projects',
-      //   link: '/projects/',
-      //   icon: 'el-icon-folder',
-      // },
+      {
+        title: 'javascript',
+        icon: 'github',
+        link: ''
+      },
+      {
+        title: 'python',
+        icon: 'github',
+        link: ''
+      },
     ],
 
     about: {
@@ -65,7 +83,7 @@ module.exports = {
       contact: [
         {
           type: 'github',
-          link: 'https://github.com/z3by',
+          link: 'https://github.com/',
         },
         {
           type: 'instagram',
@@ -111,7 +129,7 @@ module.exports = {
     [
       // 'sitemap',
       // {
-      //   hostname: 'https://vp-modern.z3by.com',
+      //   hostname: 'https://site.com',
       // },
     ],
   ],

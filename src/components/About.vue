@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div
+    class="mx-auto col-lg-6"
+  >
     <el-card
       align="center"
-      class="mx-auto zoomIn mb-3 about-card"
+      class="mx-auto zoomIn mb-5 about-card"
       shadow="hover"
     >
       <div class="card-header rounded p-3">

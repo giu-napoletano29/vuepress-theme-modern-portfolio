@@ -28,6 +28,9 @@
     <el-container class="row px-lg-4">
       <aside class="tags col-md-12 col-lg-12  py-0 py-lg-5">
         <About v-if="$themeConfig.about" /> 
+        <center>
+          <h1 class="mb-3">Experiences</h1>
+        </center>
         <PostsList :posts="pages" />
         <div
           id="posts"
