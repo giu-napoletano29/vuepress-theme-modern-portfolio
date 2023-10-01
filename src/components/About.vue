@@ -7,15 +7,25 @@
       class="mx-auto zoomIn mb-5 about-card"
       shadow="hover"
     >
-      <div class="card-header rounded p-3">
-        <div class="rounded-circle card-img-bg d-inline-block">
-          <img
-            :src="$withBase($themeConfig.about.image)"
-            :alt="$themeConfig.about.fullName"
-            width="160px"
-          >
-        </div>
-        <h1 class="mt-2 text-light">
+      <div
+        class="card-header rounded p-3"
+        :style="{
+          background: $themeConfig.about.headerColor,
+        }"
+      >
+        <img
+          :src="$withBase($themeConfig.about.image)"
+          :alt="$themeConfig.about.fullName"
+          width="200px"
+          class="rounded-circle"
+        >
+        <h1
+          class="mt-2 text-light"
+          :style="{
+            'font-weight': 400,
+            'font-size': '2rem'
+          }"
+        >
           {{ $themeConfig.about.fullName }}
         </h1>
         <center>
@@ -134,7 +144,6 @@ export default {
   max-width 80rem;
   .card-header {
     min-height: 220px;
-    background-color: darken($accentColor, 10%);
   }
 
   .card-img-bg {
