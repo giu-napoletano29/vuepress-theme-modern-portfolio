@@ -9,4 +9,4 @@ description: Developer of something very important
 location: London, Uk
 image: https://source.unsplash.com/random/800x600
 ---
-Developer of something very important
+Desc

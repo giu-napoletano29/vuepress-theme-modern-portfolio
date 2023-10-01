@@ -54,13 +54,13 @@
 </template>
 
 <script>
-import { NavigationIcon, CalendarIcon } from 'vue-feather-icons'
+import { NavigationIcon } from 'vue-feather-icons'
 import PostInfo from '@theme/components/PostInfo.vue'
 export default {
   name: 'PostCard',
   components: {
     PostInfo,
-    NavigationIcon
+    NavigationIcon,
   },
   props: {
     post: {

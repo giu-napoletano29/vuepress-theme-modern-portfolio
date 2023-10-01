@@ -63,7 +63,7 @@ module.exports = {
 
     about: {
       fullName: 'GIUSEPPE NAPOLETANO',
-      lightText: true, 
+      lightText: true,
       bio: 'I am a passionate Software Engineer, I love Vue.js ♥ ...',
       image: 'https://source.unsplash.com/random/150x150',
       headerColor: '#6C5B7B',
