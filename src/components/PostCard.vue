@@ -31,36 +31,32 @@
               {{ post.frontmatter.location }}
             </h5>
           </div>
+          <p class="mt-4">
+            <CalendarIcon />
+            {{ post.frontmatter.period }}
+          </p>
           <div
             v-if="post.summary"
-            class="ui-post-summary text-secondary my-2"
+            class="ui-post-summary text-secondary my-2 mt-5"
           >
             <!-- eslint-disable-next-line -->
             <p align="justify" v-html="post.content"/>
           </div>
         </div>
       </div>
-      <div
-        class="post-info d-flex justify-content-end text-secondary p-4 border-top border-light"
-      >
-        <PostInfo
-          :date="post.frontmatter.date"
-          :time-to-read="post.readingTime"
-          :location="post.frontmatter.location"
-        />
-      </div>
     </el-card>
   </transition>
 </template>
 
 <script>
-import { NavigationIcon } from 'vue-feather-icons'
+import { NavigationIcon, CalendarIcon } from 'vue-feather-icons'
 import PostInfo from '@theme/components/PostInfo.vue'
 export default {
   name: 'PostCard',
   components: {
     PostInfo,
     NavigationIcon,
+    CalendarIcon
   },
   props: {
     post: {

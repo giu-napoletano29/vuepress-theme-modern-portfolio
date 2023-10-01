@@ -38,6 +38,9 @@ import LanguageRubyOnRails from 'vue-material-design-icons/LanguageRubyOnRails.v
 import LanguageSwift from 'vue-material-design-icons/LanguageSwift.vue'
 import LanguageTypescript from 'vue-material-design-icons/LanguageTypescript.vue'
 import LanguageXaml from 'vue-material-design-icons/LanguageXaml.vue'
+import Linux from 'vue-material-design-icons/Linux.vue'
+import SQL from 'vue-material-design-icons/Database.vue'
+import Docker from 'vue-material-design-icons/Docker.vue'
 
 export default {
   components: {
@@ -60,6 +63,9 @@ export default {
     LanguageSwift,
     LanguageTypescript,
     LanguageXaml,
+    Linux,
+    SQL,
+    Docker
   },
 
   props: {
@@ -123,6 +129,12 @@ export default {
           return 'LanguageXaml'
         case 'Swift':
           return 'LanguageSwift'
+        case 'Linux':
+          return 'Linux'
+        case 'SQL':
+          return 'SQL'
+        case 'Docker':
+          return 'Docker'
         default:
           return ''
       }

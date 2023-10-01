@@ -16,7 +16,10 @@ module.exports = {
     // },
 
     showHeaderNav: false,
-    postsheader: 'Experiences',
+    postsheader: {
+      title: 'Experiences',
+      light: true
+    },
     // nav: [
     //   {
     //     text: 'Home',
