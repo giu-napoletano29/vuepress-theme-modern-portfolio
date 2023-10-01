@@ -17,7 +17,13 @@
         </li>
       </ul>
     </div>
+    <p         
+      :style="{
+        color: 'rgba(255,255,255,0.6)',
+      }">
 
+    <a target="_blank" href="https://icons8.com/icon/QwEwqmJDk4Za/motore">Engine </a><a target="_blank" href="https://icons8.com">icon by Icons8</a>
+    </p>
     <div class="footer-right-wrap">
       <ul
         v-if="copyright"

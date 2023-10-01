@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-auto col-md-12 col-lg-8 zoomIn mb-3 about-card"
+    class="mx-auto col-md-12 col-lg-7 zoomIn mb-3 about-card"
   >
       <post-card
         v-for="post in posts"

@@ -1,12 +1,12 @@
 ---
-period: '2019 - current'
+period: '2021 - current'
 slug: vuepress-modern-portfolio-theme
 tags:
 - Vue
 - Python
-title: Company name
-description: Developer of something important
-location: London, UK
-image: https://source.unsplash.com/random/800x600
+title: Edilportale.com
+description: I'm serving as a Fullstack Developer
+location: Bari, IT
+image: /images/edilportale.jpg
 ---
-Developer of something important
+I'm serving as a Fullstack Developer actively contributing to the development and enhancement of the platform Archiproducts.com, leading website in the architecture and design industry.

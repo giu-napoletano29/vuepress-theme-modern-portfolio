@@ -44,7 +44,7 @@
         </center>
       </div>
       <div class="p-3">
-        <p>{{ $themeConfig.about.bio }}</p>
+        <p style="font-size: 1.2rem;">{{ $themeConfig.about.bio }}</p>
       </div>
       <BlogTags :tags="tags" />
       <hr class="mt-0">

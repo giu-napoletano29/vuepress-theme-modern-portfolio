@@ -41,6 +41,7 @@ import LanguageXaml from 'vue-material-design-icons/LanguageXaml.vue'
 import Linux from 'vue-material-design-icons/Linux.vue'
 import SQL from 'vue-material-design-icons/Database.vue'
 import Docker from 'vue-material-design-icons/Docker.vue'
+import Gear from 'vue-material-design-icons/CogOutline.vue'
 
 export default {
   components: {
@@ -65,7 +66,8 @@ export default {
     LanguageXaml,
     Linux,
     SQL,
-    Docker
+    Docker,
+    Gear
   },
 
   props: {
@@ -135,6 +137,8 @@ export default {
           return 'SQL'
         case 'Docker':
           return 'Docker'
+        case 'Gear':
+          return 'Gear'
         default:
           return ''
       }

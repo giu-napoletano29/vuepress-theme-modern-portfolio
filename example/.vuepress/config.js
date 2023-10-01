@@ -1,37 +1,14 @@
 module.exports = {
-  title: 'VuePress Portfolio Example',
-  description: 'This is a portfolio example built by VuePress',
-  theme: require.resolve('../../'), // replace it with ==> theme: 'modern-blog' to use this example project as a boilerplate.
+  title: 'Giuseppe Napoletano',
+  description: "Giuseppe Napoletano's portfolio",
+  theme: require.resolve('../../'),
   summaryLength: 700,
   themeConfig: {
-    // translations: {
-    //   read_more: 'Keep reading!',
-    //   read_this_post: 'Read this post now!',
-    // },
-
-    // cookies: {
-    //   theme: 'dark-lime',
-    //   buttonText: 'Got it!',
-    //   message: 'We use cookies!',
-    // },
-
     showHeaderNav: false,
     postsheader: {
-      title: 'Experiences',
+      title: 'Currently employed at',
       light: true
     },
-    // nav: [
-    //   {
-    //     text: 'Home',
-    //     link: '/',
-    //     icon: 'el-icon-house',
-    //   },
-    //   {
-    //     text: 'Projects',
-    //     link: '/projects/',
-    //     icon: 'el-icon-folder',
-    //   },
-    // ],
 
     background: {
       imageUrl: '',
@@ -48,8 +25,58 @@ module.exports = {
 
     skills: [
       {
-        title: 'Vue',
+        title: 'VueJs',
         icon: 'Vue',
+        link: '',
+      },
+      {
+        title: 'C#',
+        icon: 'Csharp',
+        link: '',
+      },
+      {
+        title: 'C',
+        icon: 'C',
+        link: '',
+      },
+      {
+        title: 'Java',
+        icon: 'Java',
+        link: '',
+      },
+      {
+        title: 'Php',
+        icon: 'Php',
+        link: '',
+      },
+      {
+        title: 'ASP.NET',
+        icon: 'Gear',
+        link: '',
+      },
+      {
+        title: 'GNU/Linux',
+        icon: 'Linux',
+        link: '',
+      },
+      {
+        title: 'Git',
+        icon: 'Git',
+        link: '',
+      },
+      {
+        title: 'HTML',
+        icon: 'Html',
+        link: '',
+      },
+      {
+        title: 'Css',
+        icon: 'Css',
+        link: '',
+      },
+      {
+        title: 'Docker',
+        icon: 'Docker',
         link: '',
       },
       {
@@ -58,8 +85,8 @@ module.exports = {
         link: '',
       },
       {
-        title: 'Python',
-        icon: 'Python',
+        title: 'SQL',
+        icon: 'SQL',
         link: '',
       },
     ],
@@ -67,36 +94,28 @@ module.exports = {
     about: {
       fullName: 'GIUSEPPE NAPOLETANO',
       lightText: true,
-      bio: 'I am a passionate Software Engineer, I love Vue.js ♥ ...',
-      image: 'https://source.unsplash.com/random/150x150',
+      bio: "Software engineer and tech enthusiast. When I'm not immersed in lines of code, you'll find me chasing the checkered flag in the world of motorsport. 🏁",
+      image: '/images/me.jpg',
       headerColor: '#6C5B7B',
     },
     footer: {
       contact: [
         {
           type: 'github',
-          link: 'https://github.com/',
-        },
-        {
-          type: 'instagram',
-          link: 'https://instagram.com',
+          link: 'https://github.com/giu-napoletano29',
         },
         {
           type: 'linkedin',
-          link: 'https://linkedin.com',
+          link: 'https://www.linkedin.com/in/giuseppe-napoletano/',
         },
         {
-          type: 'twitter',
-          link: 'https://twitter.com',
+          type: 'mail',
+          link: 'mailto:me@giuseppenapoletano.dev',
         },
       ],
       copyright: [
         {
-          text: 'Privacy Policy',
-          link: 'https://policies.google.com/privacy?hl=en-US',
-        },
-        {
-          text: 'MIT Licensed | Copyright © 2018-present Vue.js',
+          text: 'Designed by Giuseppe Napoletano',
           link: '',
         },
       ],

@@ -18,7 +18,7 @@
           <img
             :src="$withBase(post.frontmatter.image)"
             :alt="post.title"
-            class="w-100 rounded"
+            class="w-75 rounded"
           >
         </div>
         <div class="col-sm-12 col-md-6 col-lg-7 py-4">
@@ -37,7 +37,7 @@
           </p>
           <div
             v-if="post.summary"
-            class="ui-post-summary text-secondary my-2 mt-5"
+            class="ui-post-summary text-secondary my-2 mt-4"
           >
             <!-- eslint-disable-next-line -->
             <p align="justify" v-html="post.content"/>

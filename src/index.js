@@ -20,24 +20,12 @@ module.exports = (themeConfig, ctx) => {
         path: '/',
         // layout: 'IndexPost', defaults to `Layout.vue`
         itemLayout: 'Post',
-        frontmatter: { title: 'Home' },
+        frontmatter: { title: '' },
         //itemPermalink: '/:year/:month/:day/:slug',
         pagination: {
           lengthPerPage: 10,
         },
       },
-      // {
-      //   id: 'project',
-      //   dirname: '_projects',
-      //   path: '/projects/',
-      //   layout: 'Projects',
-      //   itemLayout: 'Project',
-      //   frontmatter: { title: 'Project' },
-      //   itemPermalink: '/projects/:slug',
-      //   pagination: {
-      //     lengthPerPage: 10,
-      //   },
-      // },
     ],
     frontmatters: [
       {
