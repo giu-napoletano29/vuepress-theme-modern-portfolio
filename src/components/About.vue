@@ -20,10 +20,11 @@
           class="rounded-circle"
         >
         <h1
-          class="mt-2 text-light"
+          class="mt-2"
+          :class="{'text-light': $themeConfig.about.lightText}"
           :style="{
-            'font-weight': 400,
-            'font-size': '2rem'
+            'font-weight': 350,
+            'font-size': '2.5rem'
           }"
         >
           {{ $themeConfig.about.fullName }}

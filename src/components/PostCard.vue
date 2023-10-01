@@ -24,30 +24,19 @@
         <div class="col-sm-12 col-md-6 col-lg-7 py-4">
           <div>
             <h3 class="h3">
-                {{ post.title }}
-
-              <!-- <router-link
-                :to="post.path"
-                class="text-decoration-none"
-              >
-                {{ post.title }}
-              </router-link> -->
+              {{ post.title }}
             </h3>
+            <h5>
+              <NavigationIcon />
+              {{ post.frontmatter.location }}
+            </h5>
           </div>
           <div
             v-if="post.summary"
             class="ui-post-summary text-secondary my-2"
           >
             <!-- eslint-disable-next-line -->
-            <p align="justify" v-html="post.summary"/>
-            <router-link
-              :to="post.path"
-              class="read-more"
-            >
-              {{
-                $t("read_more")
-              }}
-            </router-link>
+            <p align="justify" v-html="post.content"/>
           </div>
         </div>
       </div>
@@ -65,11 +54,13 @@
 </template>
 
 <script>
+import { NavigationIcon, CalendarIcon } from 'vue-feather-icons'
 import PostInfo from '@theme/components/PostInfo.vue'
 export default {
   name: 'PostCard',
   components: {
     PostInfo,
+    NavigationIcon
   },
   props: {
     post: {
