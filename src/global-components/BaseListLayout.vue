@@ -29,7 +29,11 @@
       <aside class="tags col-md-12 col-lg-12  py-0 py-lg-5">
         <About v-if="$themeConfig.about" /> 
         <center>
-          <h1 class="mb-3">{{ $themeConfig.postsheader }}</h1>
+          <h1 class="mb-3"
+            :class="{'text-light': $themeConfig.postsheader.light}"
+          >
+            {{ $themeConfig.postsheader.title }}
+          </h1>
         </center>
         <PostsList :posts="pages" />
         <div

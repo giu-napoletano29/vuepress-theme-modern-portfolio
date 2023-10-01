@@ -2,14 +2,14 @@
   <div class="ui-post-info d-flex">
     <div class="post-info-item">
       <CalendarIcon />
-      {{
+      <!-- {{
         new Date(date.trim()).toLocaleDateString(undefined, {
           weekday: "long",
           year: "numeric",
           month: "long",
           day: "numeric"
         })
-      }}
+      }} -->
     </div>
     <div
       v-if="timeToRead"
@@ -39,7 +39,7 @@ import { NavigationIcon, ClockIcon, CalendarIcon } from 'vue-feather-icons'
 export default {
   components: { NavigationIcon, ClockIcon, CalendarIcon },
   props: {
-    date: { type: String, default: '2019-10-14' },
+    // date: { type: String, default: '2019-10-14' },
     timeToRead: {
       type: Object,
       default: () => {

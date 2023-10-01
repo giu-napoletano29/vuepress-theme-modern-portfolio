@@ -75,6 +75,7 @@ import {
   YoutubeIcon,
   InstagramIcon,
   LinkedinIcon,
+  MailIcon,
 } from 'vue-feather-icons'
 
 export default {
@@ -85,6 +86,7 @@ export default {
     YoutubeIcon,
     InstagramIcon,
     LinkedinIcon,
+    MailIcon,
   },
 
   computed: {
@@ -132,6 +134,8 @@ export default {
           return 'LinkedinIcon'
         case 'youtube':
           return 'YoutubeIcon'
+        case 'mail':
+          return 'MailIcon'
         default:
           return ''
       }
