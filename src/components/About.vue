@@ -18,6 +18,19 @@
         <h1 class="mt-2 text-light">
           {{ $themeConfig.about.fullName }}
         </h1>
+        <center>
+          <div
+            class="ml-4"
+            style="font-size:15px"
+          >
+            <flag
+              v-for="flag in languages"
+              :key="flag"
+              :iso="flag"
+              class="mt-2 mr-3"
+            />
+          </div>
+        </center>
       </div>
       <div class="p-3">
         <p>{{ $themeConfig.about.bio }}</p>
@@ -76,6 +89,10 @@ export default {
           }
         })
         .filter(({ iconComponent }) => iconComponent)
+    },
+
+    languages () {
+      return ((this.$themeConfig.languages) || [])
     },
 
     tags () {

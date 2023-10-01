@@ -58,21 +58,27 @@ module.exports = {
     //   },
     // ],
 
+    languages: [
+      'it',
+      'gb',
+      'es',
+    ],
+
     skills: [
       {
         title: 'Vue',
         icon: 'Vue',
-        link: ''
+        link: '',
       },
       {
         title: 'Javascript',
         icon: 'Javascript',
-        link: ''
+        link: '',
       },
       {
         title: 'Python',
         icon: 'Python',
-        link: ''
+        link: '',
       },
     ],
 
