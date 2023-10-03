@@ -4,7 +4,7 @@
     mode="in-out"
   >
     <el-card
-      class="mb-3 cursor-pointer post-card"
+      class="mb-3 cursor-pointer post-card card-H"
       shadow="hover"
       :body-style="{ padding: '0rem' }"
     >
@@ -19,6 +19,7 @@
             :src="$withBase(post.frontmatter.image)"
             :alt="post.title"
             class="w-75 rounded"
+            style="max-height: 20rem;"
           >
         </div>
         <div class="col-sm-12 col-md-6 col-lg-7 py-4">
@@ -74,6 +75,11 @@ export default {
 }
 </script>
 <style lang="stylus">
+
+.card-H {
+  max-height: 22rem;
+  // max-width: 70rem;
+}
 
 .post-info {
   @media only screen and (max-width: $MQMobile) {

@@ -146,7 +146,7 @@ export default {
 
 <style lang="stylus" scoped>
 .about-card {
-  max-width 80rem;
+  max-width 48rem;
   .card-header {
     min-height: 220px;
   }
