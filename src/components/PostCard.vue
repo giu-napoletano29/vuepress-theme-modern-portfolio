@@ -78,7 +78,9 @@ export default {
 
 .card-H {
   max-height: 22rem;
-  // max-width: 70rem;
+  @media only screen and (max-width: $MQMobile) {
+    max-height: 80rem!important;
+  }
 }
 
 .post-info {
